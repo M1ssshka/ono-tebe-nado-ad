@@ -4,14 +4,14 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 50px;
+  padding: 94px 50px;
 }
 
 /* Шаг 4. Детальная стилизация шапки */
 
 .header__links-list {
   display: flex;
-  gap: 20px;
+  gap: 23px;
   list-style: circle;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .header__link {
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: underline;
 }
 
@@ -38,33 +38,29 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 3px;
   font-style: normal;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .header__address {
   justify-self: end;
-  max-width: 210px;
+  max-width: 240px;
 }
 
 .cover {
   position: relative;
-  min-height: 790px;
-  padding: 45px 50px;
+  min-height: 757px;
+  padding: 45px 50px 50px;
   background: url("../images/cover.jpg") center / cover no-repeat;
 }
 
 .lots {
-  padding: 170px 25px 0;
-}
-
-.about {
-  padding: 170px 50px;
+  padding: 180px 25px 0;
 }
 
 .footer {
-  padding: 0 50px 60px;
+  padding: 0 50px 85px;
 }
 
 /* Шаг 5. Детальная стилизация обложки */
@@ -73,7 +69,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover {
@@ -126,6 +122,10 @@
   margin-top: 90px;
 }
 
+.cover__description-text .letter-spacing-extended {
+  letter-spacing: normal;
+}
+
 .cover__description-text {
   font-size: 20px;
   word-spacing: 24px;
@@ -137,7 +137,7 @@
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
@@ -146,7 +146,7 @@
 /* Шаг 6. Детальная стилизация секции с карточками */
 
 .lots__heading {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
   margin-left: 40px;
   font-size: 40px;
   font-weight: bold;
@@ -208,8 +208,8 @@
 }
 
 .card__text {
-  font-size: 18px;
-  line-height: 1.3;
+  font-size: 19px;
+  line-height: 1.25;
 }
 
 .lots__look-more-link {
@@ -226,6 +226,7 @@
   display: grid;
   grid-template-columns: calc((100% - 50px) / 3) 1fr;
   gap: 25px;
+  padding: 160px 25px 179px;
 }
 
 .about__logo {
@@ -245,7 +246,7 @@
 
 .about__title {
   margin-top: 90px;
-  margin-bottom: 45px;
+  margin-bottom: 100px;
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
@@ -255,8 +256,8 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  font-size: 18px;
-  line-height: 1.35;
+  font-size: 17.5px;
+  line-height: 1.37;
 }
 
 /* Шаг 8. Стилизация подвала */
@@ -271,12 +272,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 0;
   list-style: none;
 }
 
 .footer__menu-link {
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: underline;
   white-space: nowrap;
 }
