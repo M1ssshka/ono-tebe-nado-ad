@@ -84,7 +84,6 @@
   z-index: 2;
   font-size: 100px;
   font-weight: bold;
-  line-height: 1.35;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -137,7 +136,7 @@
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
-  font-size: 18px;
+  font-size: 21px;
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
@@ -202,14 +201,13 @@
 .card__title {
   font-size: 20px;
   font-weight: bold;
-  line-height: 1.2;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
 .card__text {
-  font-size: 19px;
-  line-height: 1.25;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .lots__look-more-link {
@@ -256,11 +254,20 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  font-size: 17.5px;
-  line-height: 1.37;
+  font-size: 20px;
 }
 
 /* Шаг 8. Стилизация подвала */
+
+/* Подчёркивание с отступом от букв — как в макете */
+
+.header__link,
+.card__title,
+.lots__look-more-link,
+.footer__menu-link,
+.address a {
+  text-underline-offset: 0.2em;
+}
 
 .footer {
   display: grid;
