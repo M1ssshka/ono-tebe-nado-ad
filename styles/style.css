@@ -218,3 +218,84 @@
   font-size: 20px;
   text-decoration: underline;
 }
+
+/* Шаг 7. Секция «Об аукционе» */
+
+.about {
+  display: grid;
+  grid-template-columns: calc((100% - 50px) / 3) 1fr;
+  gap: 25px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 160px;
+}
+
+.about__title {
+  margin-top: 90px;
+  margin-bottom: 45px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Шаг 8. Стилизация подвала */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: start;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.footer__menu-link {
+  font-size: 15px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.footer__address {
+  max-width: 240px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+}
